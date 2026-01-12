@@ -1,0 +1,232 @@
+// Centralized data file for easy content updates
+// Update this file to change portfolio content
+
+export const personalInfo = {
+    name: "Sandeep Kumar Gupta",
+    title: "AI Developer and Analyst",
+    subtitle: "Building intelligent solutions with Python, AI, and modern web technologies",
+    bio: `Passionate Python Developer focused on AI and web development. Skilled in building dynamic web apps and ML models, with experience in SQL, HTML/CSS, and generative AI tools. Created AI-driven platforms for mental health and agriculture, always exploring tech to solve real-world problems.`,
+    email: "1021sandeepkumar@gmail.com",
+    phone: "+91 8299200543",
+    location: "Gorakhpur, India",
+    linkedin: "https://www.linkedin.com/in/sandeep-kumar-gupta1012/",
+    github: "https://github.com/walker-arch", // Update with your GitHub username
+    resumeUrl: "/resume.pdf",
+};
+
+export const skills = {
+    programmingLanguages: [
+        { name: "Python", level: 95 },
+        { name: "Java", level: 75 },
+        { name: "HTML/CSS", level: 90 },
+        { name: "SQL", level: 85 },
+        { name: "JavaScript", level: 70 },
+    ],
+    webTechnologies: [
+        { name: "HTML5", level: 90 },
+        { name: "CSS3", level: 88 },
+        { name: "Flask/Django", level: 75 },
+        { name: "REST APIs", level: 80 },
+        { name: "Web Development", level: 85 },
+    ],
+    aiMl: [
+        { name: "Machine Learning", level: 88 },
+        { name: "Deep Learning", level: 82 },
+        { name: "Data Analysis", level: 90 },
+        { name: "Generative AI", level: 85 },
+        { name: "Data Visualization", level: 88 },
+        { name: "Neural Networks", level: 80 },
+    ],
+    tools: [
+        { name: "Google Cloud Platform", level: 85 },
+        { name: "Google App Script", level: 82 },
+        { name: "Excel & Google Sheets", level: 90 },
+        { name: "Git & GitHub", level: 80 },
+        { name: "Jupyter Notebook", level: 92 },
+        { name: "TensorFlow/Keras", level: 78 },
+    ],
+};
+
+export const projects = [
+    {
+        id: 1,
+        title: "Wellness Whisper",
+        description: "An AI-driven platform designed to help mental health patients. Features intelligent support systems and resources for mental wellness.",
+        technologies: ["Python", "AI/ML", "Web Development", "Mental Health"],
+        githubUrl: "#", // Update with actual URL
+        liveUrl: null,
+        featured: true,
+        duration: "04/2024 - 01/2025",
+    },
+    {
+        id: 2,
+        title: "Fuel Efficiency Prediction using CNN",
+        description: "A machine learning project that predicts vehicle fuel efficiency (MPG) based on engine and vehicle attributes using linear regression and CNN models.",
+        technologies: ["Python", "Machine Learning", "CNN", "Data Analysis"],
+        githubUrl: "#",
+        liveUrl: null,
+        featured: true,
+        duration: "03/2026",
+    },
+    {
+        id: 3,
+        title: "Housing Price Case Study",
+        description: "Performs comprehensive data analysis and builds a linear regression model to predict house prices based on various features.",
+        technologies: ["Python", "Linear Regression", "Data Analysis", "Pandas"],
+        githubUrl: "#",
+        liveUrl: null,
+        featured: true,
+        duration: "03/2025",
+    },
+    {
+        id: 4,
+        title: "Fraud Detection System",
+        description: "Machine learning-based fraud detection system using Python libraries to identify fraudulent transactions with high accuracy.",
+        technologies: ["Python", "Machine Learning", "Scikit-learn", "Data Analysis"],
+        githubUrl: "#",
+        liveUrl: null,
+        featured: true,
+        duration: "04/2025",
+    },
+    {
+        id: 5,
+        title: "MNIST Digit Classification",
+        description: "A deep learning project that classifies handwritten digits from the MNIST dataset using neural network models built with Keras.",
+        technologies: ["Python", "Keras", "Deep Learning", "Neural Networks"],
+        githubUrl: "#",
+        liveUrl: null,
+        featured: true,
+        duration: "04/2025",
+    },
+];
+
+export const experience = [
+    {
+        id: 1,
+        title: "Google Cloud Arcade Facilitator",
+        company: "Google Cloud",
+        duration: "03/2025 - 05/2025",
+        description: [
+            "Facilitator of Google Cloud Arcade Facilitator Program",
+            "Enhanced collaboration, mentorship, and technical support skills among diverse learners",
+            "Organized events and trained students about GCP (Google Cloud Platform)",
+            "Demonstrated leadership and communication skills in technical mentorship",
+        ],
+    },
+    {
+        id: 2,
+        title: "Campus Marketing Officer (CMO)",
+        company: "Coding Ninja 10X Club",
+        duration: "01/2025 - 05/2025",
+        description: [
+            "Led marketing strategy and branding for the club's initiatives and events",
+            "Built a strong tech community promoting growth and collaboration",
+            "Drove marketing and events to promote club activities",
+            "Communicated about upcoming projects and opportunities to students",
+        ],
+    },
+];
+
+export const education = [
+    {
+        id: 1,
+        degree: "Bachelor of Technology",
+        field: "Computer Science and Engineering",
+        specialization: "Machine Learning And Artificial Intelligence",
+        institution: "Quantum University",
+        duration: "11/2022 - 05/2026",
+        grade: "7.12 CGPA",
+    },
+    {
+        id: 2,
+        degree: "Intermediate",
+        field: "Science (PCM)",
+        specialization: "",
+        institution: "Academic Global School",
+        duration: "04/2019 - 03/2020",
+        grade: "61%",
+    },
+];
+
+export const certifications = [
+    {
+        id: 1,
+        title: "Data Analysis using Python",
+        issuer: "Online Platform",
+        date: "04/2025",
+        credentialUrl: "#",
+    },
+    {
+        id: 2,
+        title: "Build With AI - Generative AI Study Jams",
+        issuer: "Google Cloud",
+        date: "05/2024",
+        credentialUrl: "#",
+    },
+    {
+        id: 3,
+        title: "Fusion Bite Q-hack 2024 (Hackathon)",
+        issuer: "GDSC",
+        date: "04/2024",
+        credentialUrl: "#",
+    },
+    {
+        id: 4,
+        title: "Google Android Compose Camp",
+        issuer: "Google",
+        date: "03/2024",
+        credentialUrl: "#",
+    },
+    {
+        id: 5,
+        title: "Google Cybersecurity Professional Certificate",
+        issuer: "Coursera",
+        date: "12/2023 - 07/2024",
+        credentialUrl: "#",
+    },
+    {
+        id: 6,
+        title: "Machine Learning & Pattern Recognition",
+        issuer: "Training Institute",
+        date: "08/2023 - 01/2024",
+        credentialUrl: "#",
+    },
+    {
+        id: 7,
+        title: "Python Certification",
+        issuer: "GUVI (Google For Education)",
+        date: "08/2023",
+        credentialUrl: "#",
+    },
+    {
+        id: 8,
+        title: "Foundation to AI Data Science & Analytics",
+        issuer: "Training Institute",
+        date: "02/2023 - 06/2023",
+        credentialUrl: "#",
+    },
+    {
+        id: 9,
+        title: "Probability Modelling using Python",
+        issuer: "Online Platform",
+        date: "04/2025",
+        credentialUrl: "#",
+    },
+];
+
+export const achievements = [
+    "Award for successfully organizing Technical Fest (03/2025)",
+    "Award for successfully organizing Annual Fest/Cultural Fest (05/2024)",
+    "PROP's Vice President (07/2024 - 05/2025)",
+    "Google Developer Groups Member (08/2024 - Present)",
+    "Google Cloud Arcade Program Facilitator",
+];
+
+export const navLinks = [
+    { name: "Home", href: "#home" },
+    { name: "About", href: "#about" },
+    { name: "Skills", href: "#skills" },
+    { name: "Projects", href: "#projects" },
+    { name: "Experience", href: "#experience" },
+    { name: "Contact", href: "#contact" },
+];
