@@ -153,6 +153,30 @@ export const projects = [
 export const experience = [
     {
         id: 1,
+        title: "Data Analyst Intern",
+        company: "Samatrix.io",
+        duration: "06/2025 - 07/2025",
+        description: [
+            "Enhanced collaboration, mentorship, technical support, and communication skills among diverse learners and professionals",
+            "Learned data cleaning and preprocessing techniques for real-world datasets",
+            "Applied fundamental statistical concepts and analytical methods on real datasets",
+            "Improved analytical thinking and problem-solving skills through hands-on data analysis",
+        ],
+    },
+    {
+        id: 2,
+        title: "GDG Media Head",
+        company: "Google Developer Group",
+        duration: "2024 - Present",
+        description: [
+            "Leading media and content creation strategy for GDG community events and initiatives",
+            "Managing social media presence and community engagement across multiple platforms",
+            "Creating promotional content, graphics, and videos for tech events and workshops",
+            "Collaborating with team members to increase community outreach and developer engagement",
+        ],
+    },
+    {
+        id: 3,
         title: "Google Cloud Arcade Facilitator",
         company: "Google Cloud",
         duration: "03/2025 - 05/2025",
@@ -164,7 +188,7 @@ export const experience = [
         ],
     },
     {
-        id: 2,
+        id: 4,
         title: "Campus Marketing Officer (CMO)",
         company: "Coding Ninja 10X Club",
         duration: "01/2025 - 05/2025",
