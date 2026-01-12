@@ -30,8 +30,8 @@ export default function Header() {
     return (
         <header
             className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
-                    ? "bg-white/80 dark:bg-gray-900/80 backdrop-blur-lg shadow-lg"
-                    : "bg-transparent"
+                ? "bg-white/80 dark:bg-gray-900/80 backdrop-blur-lg shadow-lg"
+                : "bg-transparent"
                 }`}
         >
             <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -43,8 +43,7 @@ export default function Header() {
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                     >
-                        {personalInfo.name.split(" ")[0]}
-                        <span className="text-gray-800 dark:text-gray-200">.</span>
+                        <span className="text-gray-800 dark:text-gray-200">.dev</span>
                     </motion.a>
 
                     {/* Desktop Navigation */}
