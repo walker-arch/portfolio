@@ -162,7 +162,7 @@ export default function Hero() {
                         className="mt-16 flex flex-wrap items-center justify-center gap-4 text-sm text-gray-500 dark:text-gray-400"
                     >
                         <span className="font-medium">Tech Stack:</span>
-                        {["React", "Next.js", "TypeScript", "Node.js", "MongoDB", "AI/ML"].map(
+                        {["Python", "React", "Django", "Machine Learning", "TensorFlow", "PyTorch"].map(
                             (tech, index) => (
                                 <motion.span
                                     key={tech}

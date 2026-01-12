@@ -5,6 +5,7 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Code2, Lightbulb, Rocket, Users } from "lucide-react";
 import { personalInfo } from "@/lib/data";
+import Image from "next/image";
 
 const highlights = [
     {
@@ -51,11 +52,16 @@ export default function About() {
                         {/* Decorative Background */}
                         <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-3xl transform rotate-3" />
                         <div className="relative bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-700 rounded-3xl p-8 lg:p-12">
-                            {/* Avatar Placeholder */}
-                            <div className="aspect-square max-w-sm mx-auto bg-gradient-to-br from-blue-600 to-purple-600 rounded-2xl flex items-center justify-center shadow-2xl">
-                                <span className="text-8xl lg:text-9xl font-bold text-white">
-                                    {personalInfo.name.charAt(0)}
-                                </span>
+                            {/* Profile Photo */}
+                            <div className="aspect-square max-w-sm mx-auto rounded-2xl overflow-hidden shadow-2xl ring-4 ring-blue-500/20">
+                                <Image
+                                    src="/profile.jpg"
+                                    alt={personalInfo.name}
+                                    width={400}
+                                    height={400}
+                                    className="w-full h-full object-cover"
+                                    priority
+                                />
                             </div>
 
                             {/* Floating Stats */}
@@ -65,7 +71,7 @@ export default function About() {
                                 transition={{ delay: 0.3, duration: 0.5 }}
                                 className="absolute -bottom-4 -right-4 bg-white dark:bg-gray-800 rounded-2xl p-4 shadow-xl"
                             >
-                                <div className="text-3xl font-bold text-blue-600">30+</div>
+                                <div className="text-3xl font-bold text-blue-600">10+</div>
                                 <div className="text-sm text-gray-500 dark:text-gray-400">Projects</div>
                             </motion.div>
 
@@ -75,7 +81,7 @@ export default function About() {
                                 transition={{ delay: 0.5, duration: 0.5 }}
                                 className="absolute -top-4 -left-4 bg-white dark:bg-gray-800 rounded-2xl p-4 shadow-xl"
                             >
-                                <div className="text-3xl font-bold text-purple-600">3+</div>
+                                <div className="text-3xl font-bold text-purple-600">1+</div>
                                 <div className="text-sm text-gray-500 dark:text-gray-400">Years Exp</div>
                             </motion.div>
                         </div>
