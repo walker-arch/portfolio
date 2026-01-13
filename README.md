@@ -2,7 +2,7 @@
 
 A modern, professional, and responsive personal portfolio website showcasing my expertise in AI/ML, Data Analysis, and Full-Stack Development.
 
-🌐 **Live Demo:** [View Portfolio](https://walker-arch.github.io/portfolio)
+🌐 **Live Demo:** [View Portfolio](https://portfolio-five-zeta-36.vercel.app/)
 
 ![Portfolio Preview](https://img.shields.io/badge/Status-Live-brightgreen) ![Next.js](https://img.shields.io/badge/Next.js-16.1-black) ![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue) ![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4-38bdf8)
 
