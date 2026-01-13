@@ -1,159 +1,201 @@
-# Prem Raj | Portfolio Website
+# Sandeep Kumar Gupta | Portfolio Website
 
-A modern, professional, and responsive personal portfolio website built with Next.js 14, Tailwind CSS, and Framer Motion.
+A modern, professional, and responsive personal portfolio website showcasing my expertise in AI/ML, Data Analysis, and Full-Stack Development.
 
-![Portfolio Preview](https://via.placeholder.com/800x400?text=Portfolio+Preview)
+🌐 **Live Demo:** [View Portfolio](https://walker-arch.github.io/portfolio)
 
-## 🚀 Features
+![Portfolio Preview](https://img.shields.io/badge/Status-Live-brightgreen) ![Next.js](https://img.shields.io/badge/Next.js-16.1-black) ![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue) ![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4-38bdf8)
 
-- **Modern UI/UX** - Clean, professional design with smooth animations
-- **Dark/Light Mode** - Toggle between themes with localStorage persistence
-- **Fully Responsive** - Mobile-first design that works on all devices
-- **SEO Optimized** - Meta tags, Open Graph, and semantic HTML
-- **Fast Performance** - Built with Next.js for optimal loading
-- **Easy to Update** - All content in a single data file
+## ✨ Features
+
+- 🎨 **Modern UI/UX** - Clean, professional design with smooth Framer Motion animations
+- 🌓 **Dark/Light Mode** - Toggle between themes with localStorage persistence
+- 📱 **Fully Responsive** - Mobile-first design that works on all devices
+- ⚡ **Fast Performance** - Built with Next.js 16 for optimal loading speeds
+- 🔍 **SEO Optimized** - Meta tags, Open Graph, and semantic HTML
+- 📝 **Easy to Update** - All content managed in a single data file
+
+## 🎯 Sections
+
+| Section | Description |
+|---------|-------------|
+| **Hero** | Eye-catching introduction with animated elements |
+| **About** | Personal bio, profile image, and downloadable resume |
+| **Skills** | Animated skill bars for Programming, AI/ML, Web Tech, and Tools |
+| **Projects** | 10+ AI/ML and Full-Stack projects with GitHub links |
+| **Experience** | Work experience timeline with achievements |
+| **Education** | Academic background and certifications |
+| **Contact** | Contact form and social links |
+
+## 🛠️ Tech Stack
+
+| Category | Technologies |
+|----------|-------------|
+| **Framework** | Next.js 16 (App Router) |
+| **Language** | TypeScript |
+| **Styling** | Tailwind CSS |
+| **Animations** | Framer Motion |
+| **Icons** | Lucide React |
+| **Deployment** | GitHub Pages / Vercel |
 
 ## 📂 Project Structure
 
 ```
-src/
-├── app/
-│   ├── globals.css      # Global styles
-│   ├── layout.tsx       # Root layout with SEO
-│   └── page.tsx         # Main page
-├── components/
-│   ├── Header.tsx       # Navigation header
-│   ├── Footer.tsx       # Site footer
-│   ├── ThemeProvider.tsx # Dark mode context
-│   └── sections/
-│       ├── Hero.tsx     # Hero section
-│       ├── About.tsx    # About section
-│       ├── Skills.tsx   # Skills section
-│       ├── Projects.tsx # Projects section
-│       ├── Experience.tsx # Experience & Education
-│       └── Contact.tsx  # Contact form
-└── lib/
-    └── data.ts          # All portfolio content
+portfolio/
+├── src/
+│   ├── app/
+│   │   ├── globals.css       # Global styles & Tailwind
+│   │   ├── layout.tsx        # Root layout with SEO metadata
+│   │   ├── page.tsx          # Main page component
+│   │   └── favicon.ico       # Site favicon
+│   ├── components/
+│   │   ├── Header.tsx        # Navigation with mobile menu
+│   │   ├── Footer.tsx        # Site footer
+│   │   ├── ThemeProvider.tsx # Dark mode context provider
+│   │   └── sections/
+│   │       ├── Hero.tsx      # Hero section with CTA
+│   │       ├── About.tsx     # About me section
+│   │       ├── Skills.tsx    # Skills with progress bars
+│   │       ├── Projects.tsx  # Project cards grid
+│   │       ├── Experience.tsx # Timeline & certifications
+│   │       └── Contact.tsx   # Contact form
+│   └── lib/
+│       └── data.ts           # All portfolio content (easy updates)
+├── public/
+│   ├── Resume.pdf            # Downloadable resume
+│   └── profile.jpg           # Profile image
+└── package.json
 ```
 
-## 🛠️ Tech Stack
+## 🚀 Quick Start
 
-- **Framework:** Next.js 14 (App Router)
-- **Styling:** Tailwind CSS
-- **Animations:** Framer Motion
-- **Icons:** Lucide React
-- **Language:** TypeScript
+### Prerequisites
+- Node.js 18+ 
+- npm or yarn
 
-## 📦 Installation
+### Installation
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/PremRaj99/Portfolio.git
-   cd Portfolio
-   ```
+```bash
+# Clone the repository
+git clone https://github.com/walker-arch/portfolio.git
 
-2. **Install dependencies:**
-   ```bash
-   npm install
-   ```
+# Navigate to project
+cd portfolio
 
-3. **Run development server:**
-   ```bash
-   npm run dev
-   ```
+# Install dependencies
+npm install
 
-4. **Open [http://localhost:3000](http://localhost:3000) in your browser**
+# Start development server
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ## ✏️ Customization
 
-### Update Content
+### Update Content (Easy!)
 
-Edit `src/lib/data.ts` to update:
-- Personal information (name, title, bio, contact)
-- Skills and proficiency levels
-- Projects (title, description, tech stack, links)
-- Work experience and education
-- Certifications and achievements
+All content is in `src/lib/data.ts`:
 
-### Add Resume
+```typescript
+// Personal Info
+export const personalInfo = {
+    name: "Your Name",
+    title: "Your Title",
+    email: "your@email.com",
+    github: "https://github.com/yourusername",
+    linkedin: "https://linkedin.com/in/yourprofile",
+};
 
-Place your resume PDF in the `public/` folder and name it `resume.pdf`.
+// Add/Edit Projects
+export const projects = [
+    {
+        title: "Project Name",
+        description: "Description",
+        technologies: ["Tech1", "Tech2"],
+        githubUrl: "https://github.com/...",
+        featured: true,
+    },
+];
+```
+
+### Add Your Resume
+Place your resume PDF in `public/` folder as `Resume.pdf`.
 
 ### Add Profile Image
+Place your image in `public/` folder as `profile.jpg`.
 
-Replace the avatar placeholder in `About.tsx` with your actual image.
+## 📦 Build & Deploy
 
-## 🚀 Deployment
+### Build for Production
+```bash
+npm run build
+```
 
 ### Deploy to Vercel (Recommended)
-
-1. Push your code to GitHub
-2. Import your repository to [Vercel](https://vercel.com)
-3. Click "Deploy"
-
-Or use the CLI:
 ```bash
+# Install Vercel CLI
 npm install -g vercel
+
+# Deploy
 vercel
 ```
 
-### Deploy to Netlify
-
-1. Build the project:
-   ```bash
-   npm run build
-   ```
-
-2. Deploy the `.next` folder to Netlify
-
-### Self-Hosted
-
+### Deploy to GitHub Pages
 ```bash
 npm run build
-npm run start
+# Upload .next folder to GitHub Pages
 ```
 
-## 📝 Environment Variables
+## 🎨 Design System
 
-No environment variables required for basic functionality.
+### Color Palette
+| Color | Light Mode | Dark Mode |
+|-------|------------|-----------|
+| Primary | Blue `#3b82f6` | Blue `#60a5fa` |
+| Accent | Purple `#8b5cf6` | Purple `#a78bfa` |
+| Background | White `#ffffff` | Dark `#111827` |
+| Text | Gray `#374151` | Gray `#e5e7eb` |
 
-For advanced features (contact form backend), you may add:
-```env
-NEXT_PUBLIC_EMAIL_SERVICE=your_email_service
-```
+### Responsive Breakpoints
+- **Mobile:** < 640px
+- **Tablet:** 640px - 1024px
+- **Desktop:** > 1024px
 
-## 🎨 Color Scheme
+## 📊 Featured Projects
 
-The portfolio uses a modern blue-purple gradient theme:
-- Primary: `#3b82f6` (Blue)
-- Accent: `#8b5cf6` (Purple)
-- Background: White / Dark Gray
+| Project | Technologies | Description |
+|---------|-------------|-------------|
+| **Wellness Whisper** | Python, AI/ML, Flask | AI-driven mental health platform |
+| **AI Music Mood Classification** | ML, Audio Processing | Mood detection from music |
+| **Student Networking Platform** | Flask/Django, REST APIs | Academic collaboration platform |
+| **Fraud Detection System** | Scikit-learn, ML | Transaction fraud detection |
+| **MNIST Digit Classification** | Keras, Deep Learning | Handwritten digit recognition |
 
-## 📱 Responsive Breakpoints
+## 👨‍💻 About Me
 
-- Mobile: < 640px
-- Tablet: 640px - 1024px
-- Desktop: > 1024px
+**Sandeep Kumar Gupta** - AI Developer & Analyst
 
-## 🔮 Future Enhancements
+- 🎓 B.Tech in CSE (ML & AI) from Quantum University
+- 🔬 Passionate about Machine Learning and Data Analysis
+- 💼 Experience with Google Cloud, Python, and Web Development
+- 🏆 Google Cloud Arcade Facilitator | GDG Media Head
 
-- [ ] Add blog section with MDX
-- [ ] Integrate headless CMS
-- [ ] Add analytics (Vercel/Google)
-- [ ] Create custom 404 page
-- [ ] Add form submission backend
-- [ ] Add project filtering/search
-- [ ] Add testimonials section
+## 📞 Contact
+
+- **Email:** 1021sandeepkumar@gmail.com
+- **LinkedIn:** [sandeep-kumar-gupta1012](https://www.linkedin.com/in/sandeep-kumar-gupta1012/)
+- **GitHub:** [walker-arch](https://github.com/walker-arch)
+- **Location:** Gorakhpur, India
 
 ## 📄 License
 
-MIT License - feel free to use this template for your own portfolio!
-
-## 🤝 Contact
-
-- **GitHub:** [PremRaj99](https://github.com/PremRaj99)
-- **LinkedIn:** [Prem Raj](https://www.linkedin.com/in/prem-raj99/)
+This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-Built with ❤️ using Next.js
+<p align="center">
+  Built with ❤️ using Next.js & Tailwind CSS
+  <br>
+  ⭐ Star this repo if you find it helpful!
+</p>
