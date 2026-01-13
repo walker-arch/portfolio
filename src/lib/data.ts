@@ -179,7 +179,7 @@ export const experience = [
         id: 3,
         title: "Google Cloud Arcade Facilitator",
         company: "Google Cloud",
-        duration: "03/2025 - 05/2025",
+        duration: "03/2025 - 12/2025",
         description: [
             "Facilitator of Google Cloud Arcade Facilitator Program",
             "Enhanced collaboration, mentorship, and technical support skills among diverse learners",
@@ -191,7 +191,7 @@ export const experience = [
         id: 4,
         title: "Campus Marketing Officer (CMO)",
         company: "Coding Ninja 10X Club",
-        duration: "01/2025 - 05/2025",
+        duration: "01/2025 - Present",
         description: [
             "Led marketing strategy and branding for the club's initiatives and events",
             "Built a strong tech community promoting growth and collaboration",
