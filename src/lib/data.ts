@@ -11,7 +11,7 @@ export const personalInfo = {
     location: "Gorakhpur, India",
     linkedin: "https://www.linkedin.com/in/sandeep-kumar-gupta1012/",
     github: "https://github.com/walker-arch", // Update with your GitHub username
-    resumeUrl: "/resume.pdf",
+    resumeUrl: "/Resume.pdf",
 };
 
 export const skills = {
